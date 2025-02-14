@@ -1,0 +1,102 @@
+/* Importa os estilos base, se necessário */
+@import url("catalog.css");
+
+/* Seção de Detalhes do Produto */
+.product-detail {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+}
+
+.product-detail .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-detail-content {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Imagem do Produto */
+.product-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Informações do Produto */
+.product-info {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.product-info h2 {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.product-info .rate {
+  font-size: 1.5rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+}
+
+.product-info .price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+.product-info .description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+}
+
+/* Botões */
+.product-info button {
+  background-color: var(--accent-color);
+  color: var(--text-light);
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 9999px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-right: 1rem;
+}
+
+.product-info button:hover {
+  background-color: #006acc;
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .product-detail-content {
+    flex-direction: column;
+  }
+  .product-info {
+    text-align: center;
+  }
+  .product-info button {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}

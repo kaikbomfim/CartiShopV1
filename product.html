@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalhes do Produto - CartiShop</title>
+  <link rel="stylesheet" href="./assets/styles/product.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="container">
+      <a href="#">
+        <h1 class="logo">CARTI<span>SHOP</span></h1>
+      </a>
+      <nav aria-label="Menu principal">
+        <ul role="menubar">
+          <li role="menuitem">Home</li>
+          <li>Masculino</li>
+          <li>Feminino</li>
+          <li>Infantil</li>
+          <li>Acessórios</li>
+        </ul>
+      </nav>
+      <div class="nav-icons">
+        <img src="./assets/images/icons/cart.png" alt="Carrinho" />
+        <img src="./assets/images/icons/menu.png" alt="Menu" class="menu-icon" />
+        <a href="./index.html" class="logout-button" title="Sair do sistema">
+          <img src="./assets/images/icons/logout.png" alt="Sair" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Seção de Detalhes do Produto -->
+  <section class="product-detail">
+    <div class="container">
+      <div class="product-detail-content">
+        <!-- Imagem do Produto -->
+        <div class="product-image">
+          <img src="./assets/images/products/product-1.jpg" alt="Camisa Social Slim" />
+        </div>
+        <!-- Informações do Produto -->
+        <div class="product-info">
+          <h2>Camisa Social Slim</h2>
+          <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+          <p class="price">R$ 299,90</p>
+          <p class="description">
+            Camisa social de alta qualidade com corte slim e tecido premium. Ideal para ambientes formais e para quem
+            busca elegância com conforto. Disponível em várias cores e tamanhos.
+          </p>
+          <button class="buy-button">Comprar Agora</button>
+          <button class="back-button" onclick="window.history.back()">Voltar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="cols cols-4">
+        <div class="col">
+          <h3>Sobre</h3>
+          <p>
+            A CartiShop é sua loja online de moda com as últimas tendências e
+            melhor qualidade.
+          </p>
+        </div>
+        <div class="col">
+          <h3>Links Úteis</h3>
+          <ul>
+            <li>Sobre Nós</li>
+            <li>Contato</li>
+            <li>Blog</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Contato</h3>
+          <ul>
+            <li>Email: contato@cartishop.com</li>
+            <li>Telefone: (84) 99999-9999</li>
+            <li>Endereço: Rua da Moda, 123</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Baixe nosso App</h3>
+          <div class="app-download">
+            <img src="./assets/images/icons/app-store.png" alt="App Store" />
+            <img src="./assets/images/icons/play-store.png" alt="Play Store" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
