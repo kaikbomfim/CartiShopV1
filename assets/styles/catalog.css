@@ -111,6 +111,20 @@ header {
   width: 100%;
 }
 
+.product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Padroniza as imagens dos produtos */
+.product img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
 .banner-design::before {
   content: "";
   position: absolute;
