@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CartiShop - Login</title>
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link rel="stylesheet" href="./assets/styles/login.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="container">
+        <a href="#"
+          ><h1 class="logo">CARTI<span>SHOP</span></h1></a
+        >
+      </div>
+    </div>
+
+    <!-- Login Form -->
+    <main class="login-container">
+      <div class="login-box">
+        <h2>Login</h2>
+        <div class="login-form">
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              title="Digite um email válido (ex: nome@dominio.com)"
+              placeholder="Digite seu email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Senha</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              minlength="6"
+              title="Digite sua senha"
+              placeholder="Digite sua senha"
+            />
+          </div>
+
+          <a href="./catalog.html" class="login-button">Entrar</a>
+
+          <div class="form-links">
+            <a href="#" class="forgot-password">Esqueceu sua senha?</a>
+            <a href="#" class="create-account">Criar conta</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="cols cols-4">
+          <div class="col">
+            <h3>Sobre</h3>
+            <p>
+              A CartiShop é sua loja online de moda com as últimas tendências e
+              melhor qualidade.
+            </p>
+          </div>
+          <div class="col">
+            <h3>Links Úteis</h3>
+            <ul>
+              <li>Sobre Nós</li>
+              <li>Contato</li>
+              <li>Blog</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Contato</h3>
+            <ul>
+              <li>Email: contato@cartishop.com</li>
+              <li>Telefone: (84) 99999-9999</li>
+              <li>Endereço: Rua da Moda, 123</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Baixe nosso App</h3>
+            <div class="app-download">
+              <img src="./assets/images/icons/app-store.png" alt="App Store" />
+              <img
+                src="./assets/images/icons/play-store.png"
+                alt="Play Store"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
